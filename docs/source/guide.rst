@@ -45,6 +45,12 @@ Get all argument list:
 
     API validation is also used to reduce FP, but only for some rule types.
 
+Possible outputs
+----------------
+
+The CredSweeper can return a response in two formats: as CLI output and as JSON file. The output format is determined by the --save-json argument passed.
+
+
 Get output as JSON file:
 
 .. code-block:: bash
@@ -87,6 +93,41 @@ Get CLI output only:
 .. code-block:: ruby
 
     rule: Password / severity: medium / line_data_list: [line : 'password = "cackle!"' / line_num : 1 / path : tests/samples/password / entropy_validation: False] / api_validation: NOT_AVAILABLE / ml_validation: VALIDATED_KEY
+
+In this case, the variables can take values:
+
+"rule": string variable, rule name. Set in `config.yaml <https://github.com/Samsung/CredSweeper/blob/main/credsweeper/rules/config.yaml>`_
+
+"severity": 
+
+.. automodule::  credsweeper.common.constants.Severity
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+"api_validation": 
+
+.. automodule::  credsweeper.common.constants.KeyValidationOption
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+"ml_validation": 
+
+.. automodule::  credsweeper.common.constants.KeyValidationOption
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Line Data List(List of Dicts) `in code <https://credsweeper.readthedocs.io/en/latest/credentials.html#credsweeper.credentials.line_data.LineData>`_:
+
+line : string variable, line content
+
+line_num : int variable, number of candidate line in file
+
+path : string variable, path to file
+
+entropy_validation: boolean variable, result of entropy check for credential candidate
 
 Tests
 -----
