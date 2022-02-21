@@ -119,12 +119,12 @@ In this case, the variables can take values:
    :undoc-members:
    :show-inheritance:
 
-Line Data List(List of Dicts) `in code <https://credsweeper.readthedocs.io/en/latest/credentials.html#credsweeper.credentials.line_data.LineData>`_::
+**Line Data** List(List of Dicts) `in code <https://credsweeper.readthedocs.io/en/latest/credentials.html#credsweeper.credentials.line_data.LineData>`_:
 
-	**line** : string variable, line content
-	**line_num** : int variable, number of candidate line in file
-	**path** : string variable, path to file
-	**entropy_validation** : boolean variable, result of entropy check for credential candidate
+* **line** : string variable, line content
+* **line_num** : int variable, number of candidate line in file
+* **path** : string variable, path to file
+* **entropy_validation** : boolean variable, result of entropy check for credential candidate
 
 Tests
 -----
