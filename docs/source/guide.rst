@@ -100,21 +100,21 @@ In this case, the variables can take values:
 
 "severity": 
 
-.. automodule::  credsweeper.common.constants.Severity
+.. autoclass::  credsweeper.common.constants.Severity
    :members:
    :undoc-members:
    :show-inheritance:
 
 "api_validation": 
 
-.. automodule::  credsweeper.common.constants.KeyValidationOption
+.. autoclass::  credsweeper.common.constants.KeyValidationOption
    :members:
    :undoc-members:
    :show-inheritance:
 
 "ml_validation": 
 
-.. automodule::  credsweeper.common.constants.KeyValidationOption
+.. autoclass::  credsweeper.common.constants.KeyValidationOption
    :members:
    :undoc-members:
    :show-inheritance:
